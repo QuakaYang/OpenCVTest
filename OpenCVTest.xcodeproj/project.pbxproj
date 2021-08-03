@@ -25,6 +25,7 @@
 		0FACE5BE26B7E89B0037B94D /* libopencv_ts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACE5AD26B7E89B0037B94D /* libopencv_ts.a */; };
 		0FACE5BF26B7E89B0037B94D /* libopencv_stitching.4.5.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACE5AE26B7E89B0037B94D /* libopencv_stitching.4.5.3.dylib */; };
 		0FACE5C026B7E89B0037B94D /* cv2.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACE5AF26B7E89B0037B94D /* cv2.so */; };
+		0FACE5C626B81A730037B94D /* libopencv_xfeatures2d.4.5.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACE5C526B81A730037B94D /* libopencv_xfeatures2d.4.5.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,9 @@
 		0FACE5AE26B7E89B0037B94D /* libopencv_stitching.4.5.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.4.5.3.dylib; path = lib/libopencv_stitching.4.5.3.dylib; sourceTree = "<group>"; };
 		0FACE5AF26B7E89B0037B94D /* cv2.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = cv2.so; path = lib/cv2.so; sourceTree = "<group>"; };
 		0FACE5C126B7EB940037B94D /* opencv */ = {isa = PBXFileReference; lastKnownFileType = folder; path = opencv; sourceTree = "<group>"; };
+		0FACE5C526B81A730037B94D /* libopencv_xfeatures2d.4.5.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xfeatures2d.4.5.3.dylib; path = ../opencv/build/lib/libopencv_xfeatures2d.4.5.3.dylib; sourceTree = "<group>"; };
+		0FACE5C726B81CC30037B94D /* match1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = match1.jpeg; sourceTree = "<group>"; };
+		0FACE5C826B81CC30037B94D /* match2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = match2.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FACE5C626B81A730037B94D /* libopencv_xfeatures2d.4.5.3.dylib in Frameworks */,
 				0FACE5B026B7E89B0037B94D /* libopencv_dnn.4.5.3.dylib in Frameworks */,
 				0FACE5B126B7E89B0037B94D /* libopencv_highgui.4.5.3.dylib in Frameworks */,
 				0FACE5B226B7E89B0037B94D /* libopencv_objdetect.4.5.3.dylib in Frameworks */,
@@ -114,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				0FACE5C126B7EB940037B94D /* opencv */,
+				0FACE5C726B81CC30037B94D /* match1.jpeg */,
+				0FACE5C826B81CC30037B94D /* match2.jpeg */,
 				0FACE59C26B7E8740037B94D /* test.png */,
 				0FACE59426B7E76D0037B94D /* main.cpp */,
 			);
@@ -123,6 +130,7 @@
 		0FACE59E26B7E89B0037B94D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FACE5C526B81A730037B94D /* libopencv_xfeatures2d.4.5.3.dylib */,
 				0FACE5AF26B7E89B0037B94D /* cv2.so */,
 				0FACE5AB26B7E89B0037B94D /* libopencv_calib3d.4.5.3.dylib */,
 				0FACE5AA26B7E89B0037B94D /* libopencv_core.4.5.3.dylib */,
@@ -345,6 +353,7 @@
 					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/ts/include",
 					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/videoio/include",
 					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/video/include",
+					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/xfeatures2d/include",
 					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/world/include",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
@@ -381,6 +390,7 @@
 					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/ts/include",
 					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/videoio/include",
 					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/video/include",
+					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/xfeatures2d/include",
 					"$(PROJECT_DIR)/OpenCVTest/opencv/modules/world/include",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
