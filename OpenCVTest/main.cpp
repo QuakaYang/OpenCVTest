@@ -11,22 +11,17 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-#define BYTE unsigned char
+#include "border_detection_canny.h"
 
 using namespace std;
 using namespace cv;
 
 int main() {
-  Mat image = imread("test.png");
 
-  //create a window to display the image
-  namedWindow("img");
+  // Canny
+  CannyBorderDetection detection;
+  detection.canny_process();
 
-  //show the image in the window
-  imshow("img", image);
-
-  //wait for the user to hit a key
-  waitKey(0);
   return 0;
 }
 

@@ -25,6 +25,7 @@
 		0FACE5BE26B7E89B0037B94D /* libopencv_ts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACE5AD26B7E89B0037B94D /* libopencv_ts.a */; };
 		0FACE5BF26B7E89B0037B94D /* libopencv_stitching.4.5.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACE5AE26B7E89B0037B94D /* libopencv_stitching.4.5.3.dylib */; };
 		0FACE5C026B7E89B0037B94D /* cv2.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACE5AF26B7E89B0037B94D /* cv2.so */; };
+		0FACE5D026BA4DBC0037B94D /* border_detection_canny.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0FACE5CF26BA4DBC0037B94D /* border_detection_canny.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,9 @@
 		0FACE5AE26B7E89B0037B94D /* libopencv_stitching.4.5.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.4.5.3.dylib; path = lib/libopencv_stitching.4.5.3.dylib; sourceTree = "<group>"; };
 		0FACE5AF26B7E89B0037B94D /* cv2.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = cv2.so; path = lib/cv2.so; sourceTree = "<group>"; };
 		0FACE5C126B7EB940037B94D /* opencv */ = {isa = PBXFileReference; lastKnownFileType = folder; path = opencv; sourceTree = "<group>"; };
+		0FACE5CC26BA37EE0037B94D /* test1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test1.jpeg; sourceTree = "<group>"; };
+		0FACE5CF26BA4DBC0037B94D /* border_detection_canny.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = border_detection_canny.cpp; sourceTree = "<group>"; };
+		0FACE5D126BA752B0037B94D /* border_detection_canny.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = border_detection_canny.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,9 @@
 			children = (
 				0FACE5C126B7EB940037B94D /* opencv */,
 				0FACE59C26B7E8740037B94D /* test.png */,
+				0FACE5CC26BA37EE0037B94D /* test1.jpeg */,
+				0FACE5D126BA752B0037B94D /* border_detection_canny.h */,
+				0FACE5CF26BA4DBC0037B94D /* border_detection_canny.cpp */,
 				0FACE59426B7E76D0037B94D /* main.cpp */,
 			);
 			path = OpenCVTest;
@@ -201,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FACE59526B7E76D0037B94D /* main.cpp in Sources */,
+				0FACE5D026BA4DBC0037B94D /* border_detection_canny.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
