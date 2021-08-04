@@ -9,10 +9,12 @@
 #define BORDERDETECTION_H
 
 using namespace cv;
+using namespace std;
 
 class CannyBorderDetection {
  private:
-  
+  static void CannyThreshold(int, void*);
+
  public:
   int canny_process();
 };
